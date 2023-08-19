@@ -1,15 +1,21 @@
 import IconsHeader from '../../components/iconsHeader';
 import Logo from '../../components/logo';
 import OptionsHeader from '../../components/optionsHeader';
-import './style.css';
+import styled from 'styled-components';
+
+const HeaderContainer = styled.div`
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+`
 
 function Header() {
     return (
-        <header className='App-header'>
+        <HeaderContainer>
             <Logo/>
             <OptionsHeader/>
             <IconsHeader/>
-        </header>
+        </HeaderContainer>
     )
 }
 
