@@ -10,6 +10,7 @@ const Option = styled.li`
     cursor: pointer;
     height: 100%;
     padding: 0 5px;
+    color: #E8E6E3;
 `
 
 const Options = styled.ul`

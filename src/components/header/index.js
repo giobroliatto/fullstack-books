@@ -4,7 +4,7 @@ import OptionsHeader from '../../components/optionsHeader';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.div`
-    background-color: #FFF;
+    background-color: #181A1B;
     display: flex;
     justify-content: center;
 `

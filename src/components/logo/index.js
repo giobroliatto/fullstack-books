@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const LogoContainer = styled.div`
     display: flex;
+    color: #E8E6E3;
     font-size: 30px;
 `
 
