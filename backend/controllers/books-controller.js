@@ -15,10 +15,16 @@ function getBooks(req, res) {
 function getBook(req, res) {
     try {
         const id = req.params.id;
-        const book = getBookById(id);
+
+        if (id && Number(id)) {
+            const book = getBookById(id);
+            res.status(200);
+            res.send(book);
+        } else {
+            res.status(422);
+            res.send('id not found');
+        }
         
-        res.status(200);
-        res.send(book);
     } catch (err) {
         res.status(500);
         res.send(err.message);
