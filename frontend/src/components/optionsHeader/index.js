@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Option = styled.li`
     min-width: 120px;
@@ -24,7 +25,9 @@ function OptionsHeader() {
 
         <Options>
             { textOptions.map(text => (
-            <Option><p>{text}</p></Option>
+                <Link to={`/${text.toLowerCase()}`}>
+                    <Option><p>{text}</p></Option>
+                </Link>
             )) }
         </Options>
         

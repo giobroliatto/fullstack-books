@@ -1,7 +1,5 @@
-import Header from './components/header';
 import styled from 'styled-components';
-import Search from './components/search';
-import LastReleases from './components/lastReleases';
+import Search from '../components/Search';
 
 const AppContainer = styled.div`
   width: 100vw;
@@ -9,16 +7,14 @@ const AppContainer = styled.div`
   background-image: linear-gradient(90deg, #32113b 35%, #6d5a70);
 `
 
-function App() {
+function Favorites() {
   return (
     <AppContainer>
 
-      <Header/>
       <Search/>
-      <LastReleases/>
 
     </AppContainer>
   );
 }
 
-export default App;
+export default Favorites;

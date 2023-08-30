@@ -1,6 +1,6 @@
 import { books } from './lastReleasesData';
-import { Title } from '../title'
-import RecommendationCard from '../recommendationCard';
+import { Title } from '../Title'
+import RecommendationCard from '../RecommendationCard';
 import recommendationBook from '../../assets/book2.png'
 import styled from 'styled-components';
 

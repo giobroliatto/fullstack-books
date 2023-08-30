@@ -1,4 +1,4 @@
-import Input from "../input";
+import Input from "../Input";
 import styled from 'styled-components';
 import { useState } from "react";
 import { books } from "./searchData";

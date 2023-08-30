@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Title } from '../title';
+import { Title } from '../Title';
 
 const Card = styled.div`
     align-items: center;
