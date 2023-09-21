@@ -2,6 +2,8 @@ import Input from "../Input";
 import styled from 'styled-components';
 import { useEffect, useState } from "react";
 import { getBooks } from "../../services/books-services";
+import { postFavorite } from "../../services/favorites-services"
+import bookImg from '../../assets/book.png'
 
 const SearchContainer = styled.section`
     background-image: linear-gradient(90deg, #32113b 35%, #6d5a70);
@@ -47,14 +49,20 @@ function Search() {
     const [searchedBooks, setSearchedBooks] = useState([]);
     const [books, setBooks] = useState([]);
 
-    useEffect(() => {
-        fetchBooks();
-    }, [])
-
     async function fetchBooks() {
         const apiBooks = await getBooks();
         setBooks(apiBooks);
     }
+
+    async function insertFavorite(id) {
+        await postFavorite(id);
+
+        alert(`book ${id} added to favorites`)
+    }
+
+    useEffect(() => {
+        fetchBooks();
+    }, [])
 
     return (
         <SearchContainer>
@@ -70,9 +78,9 @@ function Search() {
                 }}
             />
             { searchedBooks.map(book => (
-                <Result>
+                <Result onClick={() => insertFavorite(book.id)}>
+                    <img src={bookImg} alt='book-cover'/>
                     <p>{book.name}</p>
-                    <img src={book.src} alt='book-cover'/>
                 </Result>
             )) }
         </SearchContainer>
