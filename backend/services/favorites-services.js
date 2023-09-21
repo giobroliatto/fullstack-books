@@ -4,7 +4,7 @@ function getAllFavorites() {
     return JSON.parse(fs.readFileSync('favorites.json'));
 }
 
-function addFavorite(bookId) {
+function addFavorite(id) {
   const books = JSON.parse(fs.readFileSync('books.json'));
   const favorites = JSON.parse(fs.readFileSync('favorites.json'));
 
