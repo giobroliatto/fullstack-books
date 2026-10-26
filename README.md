@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="frontend/src/assets/logo.svg" width="72" alt="FullStack Books logo" />
+
 # FullStack Books
 
 **Online bookstore with a React front end and a Node.js API for searching books and managing favorites.**
