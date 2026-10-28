@@ -12,7 +12,7 @@
     "url": "git+https://github.com/giobroliatto/fullstack-books.git"
   },
   "author": "gio broliatto",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/giobroliatto/fullstack-books/issues"
   },

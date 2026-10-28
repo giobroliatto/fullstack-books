@@ -12,6 +12,8 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
 
+[![MIT License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 </div>
 
 **English** · [Português](README.pt-BR.md)
@@ -96,6 +98,12 @@ frontend/src/
 ├── routes/          # Home and Favorites pages
 └── services/        # API calls with Axios
 ```
+
+---
+
+## License
+
+[MIT](LICENSE)
 
 ---
 
